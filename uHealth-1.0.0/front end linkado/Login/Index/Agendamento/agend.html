@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta-resolution content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" href="agend_style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="user-silhouette">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <h1 class="title">Agendamento</h1>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <p class="instruction-text">Por favor informe:</p>
+
+        <form id="form-agendamento">
+
+            <!-- 🔥 ESPECIALIDADE -->
+            <div class="form-group">
+                <select class="input-field input-placeholder-bg" id="especialidade">
+                    <option value="">Selecione o especialista...</option>
+                    <option value="Cardiologista">Cardiologista</option>
+                    <option value="Ortopedista">Ortopedista</option>
+                    <option value="Dermatologista">Dermatologista</option>
+                    <option value="Neurologista">Neurologista</option>
+                    <option value="Clínico Geral">Clínico Geral</option>
+                </select>
+            </div>
+
+            <!-- 🔥 LOCAL -->
+            <div class="form-group">
+                <select class="input-field input-placeholder-bg" id="local">
+                    <option value="">Selecione o local...</option>
+                    <option value="Posto Central">Posto Central</option>
+                    <option value="Unidade Norte">Unidade Norte</option>
+                    <option value="Unidade Sul">Unidade Sul</option>
+                    <option value="Clínica Modelo">Clínica Modelo</option>
+                </select>
+            </div>
+
+            <!-- 🔥 DIAS -->
+            <div class="form-group">
+                <select class="input-field input-placeholder-bg" id="dias">
+                    <option value="">Dias em que gostaria de ser atendido...</option>
+                    <option value="Segunda-feira">Segunda-feira</option>
+                    <option value="Terça-feira">Terça-feira</option>
+                    <option value="Quarta-feira">Quarta-feira</option>
+                    <option value="Quinta-feira">Quinta-feira</option>
+                    <option value="Sexta-feira">Sexta-feira</option>
+                </select>
+            </div>
+
+            <button type="button" class="ai-suggestion-button">
+                Receba sugestões de IA
+            </button>
+        </form>
+    </div>
+</body>
+</html>

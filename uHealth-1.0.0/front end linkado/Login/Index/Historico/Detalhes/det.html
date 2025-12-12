@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes de consultas</title>
+    <link rel="stylesheet" href="det_style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="user-silhouette">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <h1 class="title">Detalhes da consulta</h1>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <h2 class="section-title">Resultados consulta</h2>
+
+        <div class="results-box">
+
+            <p class="result-item">
+                <span class="item-label">Descrição:</span>
+                <span id="descricao">Carregando...</span>
+            </p>
+
+            <p class="result-item">
+                <span class="item-label">Resultado:</span>
+                <span id="resultado">Carregando...</span>
+            </p>
+
+            <p class="result-item">
+                <span class="item-label">Pedidos:</span>
+                <ul id="pedidos"><li>Carregando...</li></ul>
+            </p>
+
+        </div>
+    </div>
+
+    <script src="det_logica.js"></script>
+</body>
+</html>

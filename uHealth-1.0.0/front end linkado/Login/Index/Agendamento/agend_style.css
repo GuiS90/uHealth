@@ -1,0 +1,129 @@
+/* Reset básico para melhor consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7; /* Fundo levemente cinza fora do header */
+    color: #333;
+    min-height: 100vh;
+}
+
+/* --- Header (Parte superior preta) --- */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+    /* Altura e alinhamento para corresponder à imagem */
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    /* Ajuste de margem/padding para celular */
+    padding: 0 5%;
+}
+
+.user-silhouette {
+    width: 35px; /* Tamanho da silhueta */
+    height: 35px;
+    fill: #fff; /* Cor da silhueta branca no fundo preto */
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* --- Conteúdo Principal --- */
+.content-container {
+    padding: 20px 5%; /* Padding lateral responsivo */
+    max-width: 600px; /* Limite a largura em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.instruction-text {
+    font-size: 1em;
+    margin-bottom: 25px;
+    font-weight: normal;
+}
+
+/* --- Formulário e Campos --- */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.input-field {
+    width: 100%;
+    padding: 18px 15px; /* Altura generosa para o campo */
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    outline: none;
+    /* Cor do texto do placeholder é sutil */
+    color: #333;
+}
+
+/* Estilo do campo com fundo cinza claro */
+.input-placeholder-bg {
+    background-color: #e0e0e0; /* Cinza claro para simular a área cinza da imagem */
+}
+
+/* Estilo do Placeholder */
+::placeholder {
+    color: #666; /* Cor do placeholder mais sutil */
+    opacity: 1; /* Garante que funcione em todos os browsers */
+}
+
+/* --- Botão/Balão de Sugestões de IA --- */
+.ai-suggestion-button {
+    background-color: #4CAF50; /* Verde, como na imagem */
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    position: relative;
+    /* Alinhamento ao canto esquerdo do container */
+    float: left;
+}
+
+/* Triângulo de Balão (Speech Bubble) */
+.ai-suggestion-button::before {
+    content: '';
+    position: absolute;
+    bottom: -10px; /* Posição para apontar para baixo */
+    left: 15px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #4CAF50; /* Cor do balão */
+    /* Ajuste para mover o triângulo para o canto inferior esquerdo */
+    transform: translateX(-50%);
+}
+
+/* Limpar o float */
+form::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* --- Media Queries para Responsividade --- */
+
+/* Telas maiores (tablets, desktops) - centraliza o container e ajusta padding */
+@media (min-width: 768px) {
+    .header-content {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+}

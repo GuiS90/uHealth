@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Médico | Clínica</title>
+    <style>
+        /* --------------------------- */
+        /* CSS Básico para Estilização */
+        /* --------------------------- */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+        }
+
+        h1 {
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"], 
+        input[type="tel"],
+        input[type="email"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box; /* Garante que padding não aumente a largura total */
+        }
+
+        button[type="submit"] {
+            background-color: #28a745; /* Verde para ação de sucesso */
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏥 Novo Cadastro de Médico</h1>
+        <form action="processa_cadastro.php" method="POST">
+            
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="crm">CRM (Registro):</label>
+            <input type="text" id="crm" name="crm" required>
+
+            <label for="especialidade">Especialidade:</label>
+            <input type="text" id="especialidade" name="especialidade">
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+
+            <button type="submit">✅ Cadastrar Médico</button>
+        </form>
+    </div>
+</body>
+</html>
