@@ -106,15 +106,15 @@ COMO EXECUTAR O PROJETO (DEPLOY LOCAL)
 ---------------------------------------------------
 
 1. Clonar o repositório:
-    git clone https://github.com/seu-usuario/seu-repositorio.git
-    cd seu-repositorio
+    git clone https://github.com/GuiS90/uHealth
+    cd uHealth
 
 2. Configurar e rodar o backend:
     cd backend
-    npm install
+    npm install depencies
     npm start
 
-    Servidor: http://localhost:3000
+    Servidor: http://localhost:3333
 
 3. Rodar o frontend via Live Server no VS Code:
 - Abrir a pasta frontend
