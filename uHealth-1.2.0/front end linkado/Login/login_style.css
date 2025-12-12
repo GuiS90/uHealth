@@ -1,0 +1,126 @@
+/* Reset básico para melhor consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fundo branco como na imagem */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinhamento ao topo, como a imagem sugere um scroll vertical */
+    padding-top: 50px; /* Espaço do topo */
+    min-height: 100vh;
+}
+
+.login-container {
+    width: 90%;
+    max-width: 400px; /* Largura máxima razoável para formulário */
+    text-align: center;
+    padding: 20px;
+}
+
+/* Título principal */
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+    font-weight: normal; /* A fonte na imagem parece ter um peso normal */
+}
+
+/* Ícone do Usuário */
+.icon-placeholder {
+    margin-bottom: 20px;
+}
+
+.user-icon {
+    width: 80px; /* Tamanho do ícone */
+    height: 80px;
+    color: #000; /* Cor do ícone */
+    stroke-width: 1.5; /* Espessura da linha */
+}
+
+/* Campos do Formulário */
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 15px 10px; /* Preenchimento interno */
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    outline: none;
+}
+
+/* Estilo do campo com fundo cinza claro */
+.input-placeholder-bg {
+    background-color: #e0e0e0; /* Cinza claro para simular a área cinza da imagem */
+    color: #666; /* Cor do texto do placeholder */
+}
+
+/* Link "Esqueci minha senha" */
+.forgot-password {
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 0.9em;
+    color: #007bff; /* Azul padrão para link */
+    text-decoration: none;
+}
+
+/* Texto "Continuar com:" */
+.continue-with-text {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Ícones de Login Social */
+.social-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; /* Espaçamento entre os elementos */
+    margin-bottom: 50px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 10px;
+    /* Ajuste o tamanho do contêiner do ícone se necessário, mas as imagens são mais simples */
+}
+
+.social-img {
+    width: 40px; /* Tamanho do ícone social */
+    height: 40px;
+    vertical-align: middle;
+}
+
+.or-separator {
+    color: #666;
+    font-size: 1em;
+}
+
+/* Área de Cadastro */
+.signup-text {
+    font-size: 1em;
+    color: #333;
+}
+
+.signup-link {
+    color: #007bff; /* Azul padrão para link */
+    text-decoration: none;
+    font-weight: bold;
+}

@@ -1,0 +1,109 @@
+/* Reset básico para melhor consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fundo branco */
+    color: #333;
+    min-height: 100vh;
+}
+
+/* --- Header (Parte superior preta) --- */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.user-silhouette {
+    width: 35px; /* Tamanho da silhueta */
+    height: 35px;
+    fill: #fff; /* Cor da silhueta branca no fundo preto */
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* --- Conteúdo Principal --- */
+.content-container {
+    padding: 20px 5%; /* Padding lateral responsivo */
+    max-width: 600px; /* Limite a largura em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* --- Lista de Receitas --- */
+.recipe-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Espaço entre os itens da receita */
+}
+
+.recipe-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #555; /* Fundo cinza escuro para o item */
+    border-radius: 4px;
+    overflow: hidden; /* Garante que o botão se encaixe corretamente */
+    height: 50px; /* Altura fixa para todos os itens, como na imagem */
+}
+
+.recipe-info {
+    display: flex;
+    flex-grow: 1; /* Permite que o info cresça e ocupe o espaço */
+    align-items: center;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.recipe-name {
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+.recipe-validity {
+    font-size: 0.9em;
+    color: #ccc; /* Cor de texto mais claro para a validade */
+}
+
+.renew-button {
+    background-color: #4169e1; /* Azul vibrante (Royal Blue) */
+    color: #fff;
+    border: none;
+    padding: 0 20px;
+    height: 100%; /* Ocupa toda a altura do item */
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    /* Adiciona sombra sutil se desejar, para profundidade */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    /* Garante que o botão não tenha o mesmo raio do container */
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    min-width: 100px; /* Largura mínima para o botão "Renovar" */
+}
+
+/* --- Media Queries para Responsividade --- */
+
+/* Telas maiores (tablets, desktops) - centraliza o container e ajusta padding */
+@media (min-width: 768px) {
+    .header-content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0; 
+    }
+}
