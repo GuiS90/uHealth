@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Paciente</title>
+    <link rel="stylesheet" href="perfil.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="avatar">
+                    <img src="avatar-placeholder.png" alt="Avatar">
+                </div>
+                <div class="user-info">
+                    <h1 id="username" class="editable" data-field="nome">Carregando...</h1>
+                    <p id="email" class="editable" data-field="email">Carregando...</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Botões -->
+        <button id="btnEditar" class="edit-btn">Editar Perfil</button>
+        <button id="btnSalvar" class="save-btn hidden">Salvar</button>
+        <button id="btnCancelar" class="cancel-btn hidden">Cancelar</button>
+
+        <!-- 🔥 Botão de Exclusão -->
+        <button id="btnExcluir" class="delete-btn">Excluir Conta</button>
+
+        <!-- Informações Pessoais -->
+        <section class="profile-details">
+            <div class="profile-card">
+                <h2>Informações Pessoais</h2>
+
+                <p><strong>Email:</strong> 
+                    <span id="emailInfo" class="editable" data-field="email">Carregando...</span>
+                </p>
+
+                <p><strong>Telefone:</strong> 
+                    <span id="phone" class="editable" data-field="telefone">Carregando...</span>
+                </p>
+
+                <p><strong>CPF:</strong> 
+                    <span id="cpf">Carregando...</span>
+                </p>
+
+                <p><strong>Data de Nascimento:</strong> 
+                    <span id="dob" class="editable" data-field="data_nascimento">Carregando...</span>
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Modal -->
+    <div id="modal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Perfil atualizado</h2>
+            <p>Seu perfil foi atualizado com sucesso!</p>
+            <button id="btnModalClose">OK</button>
+        </div>
+    </div>
+
+    <script src="perfil.js"></script>
+</body>
+</html>
