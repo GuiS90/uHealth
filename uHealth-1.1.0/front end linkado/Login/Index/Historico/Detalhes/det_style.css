@@ -1,0 +1,87 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    min-height: 100vh;
+}
+
+/* --- Header (Parte superior preta) --- */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.user-silhouette {
+    width: 35px;
+    height: 35px;
+    fill: #fff;
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* --- Conteúdo Principal e Container --- */
+.content-container {
+    padding: 20px 5%; /* Padding lateral responsivo */
+    max-width: 600px; /* Limite a largura em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Título da Seção */
+.section-title {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+/* Caixa de Resultados (Área Cinza Clara) */
+.results-box {
+    width: 100%;
+    /* Define uma altura mínima que pode ser ajustada ou removida se o conteúdo for dinâmico */
+    min-height: 250px; 
+    background-color: #e0e0e0; /* Cinza claro, como na imagem */
+    border-radius: 4px;
+    padding: 15px;
+    text-align: left;
+}
+
+.result-item {
+    margin-bottom: 15px; /* Espaçamento entre os itens */
+    font-size: 1em;
+    color: #333;
+    /* Remove a margem do último item se necessário */
+    /* &:last-child { margin-bottom: 0; } */
+}
+
+.item-label {
+    font-weight: bold;
+    /* O texto "Descrição:.." e os demais são os labels */
+}
+
+
+/* --- Media Queries para Responsividade --- */
+@media (min-width: 768px) {
+    .header-content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0; 
+    }
+}

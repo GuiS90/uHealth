@@ -1,0 +1,172 @@
+/* Reset básico para melhor consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff; /* Fundo branco */
+    color: #333;
+    min-height: 100vh;
+}
+
+/* --- Header (Parte superior preta) --- */
+.header {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 0;
+    width: 100%;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+}
+
+.user-silhouette {
+    width: 35px; /* Tamanho da silhueta */
+    height: 35px;
+    fill: #fff; /* Cor da silhueta branca no fundo preto */
+    margin-right: 15px;
+}
+
+.title {
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+/* --- Conteúdo Principal --- */
+.content-container {
+    padding: 20px 5%; /* Padding lateral responsivo */
+    max-width: 600px; /* Limite a largura em telas grandes */
+    margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+/* Controle de Histórico e Botão */
+.history-controls {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px; /* Espaço entre o texto e o botão */
+}
+
+.history-label {
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.select-period-button {
+    background-color: #e0e0e0; /* Cinza claro, como na imagem */
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    font-size: 0.9em;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+/* Caixa de Histórico (Área cinza escura) */
+.history-box {
+    width: 100%;
+    min-height: 350px; 
+    background-color: #444; /* Cinza escuro, como na imagem */
+    border-radius: 4px;
+    padding: 15px;
+    /* Remover flexbox e alinhamentos que eram apenas para o placeholder */
+}
+
+/* --- NOVOS ESTILOS PARA O ITEM DE HISTÓRICO --- */
+
+/* Estilo para o link que envolve o item */
+.history-item-link {
+    text-decoration: none; /* Remove sublinhado do link */
+    display: block; /* Ocupa a largura total */
+    margin-bottom: 10px; /* Espaço entre os itens de histórico */
+    border-radius: 4px; /* Opcional: para visual */
+    transition: background-color 0.2s; /* Efeito hover */
+}
+
+/* Estilo para o item de histórico (o 'botão' clicável) */
+.history-item {
+    background-color: #555; /* Fundo mais claro que o box, mas escuro */
+    color: #fff; /* Texto branco */
+    padding: 12px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between; /* Alinha texto e data nas extremidades */
+    align-items: center;
+    border: 1px solid transparent; /* Para evitar que o hover mova o item */
+}
+
+/* Efeito ao passar o mouse */
+.history-item-link:hover .history-item {
+    background-color: #666; /* Escurece um pouco no hover */
+    border-color: #aaa; /* Dá um leve destaque na borda */
+}
+
+.query-text {
+    font-size: 1em;
+    font-weight: normal;
+    color: #fff;
+    flex-grow: 1; /* Permite que o texto ocupe o espaço */
+}
+
+.query-date {
+    font-size: 0.8em;
+    color: #bbb; /* Data um pouco mais clara */
+    white-space: nowrap; /* Garante que a data não quebre linha */
+    margin-left: 10px;
+}
+
+/* Removemos o estilo do placeholder, pois o item real está no lugar */
+.placeholder-text {
+    display: none; 
+}
+
+/* --- Media Queries para Responsividade --- */
+
+/* Telas maiores (tablets, desktops) - centraliza o container e ajusta padding */
+@media (min-width: 768px) {
+    .header-content {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 0; /* Remove padding lateral do header-content quando centralizado */
+    }
+}
+
+.history-box {
+    max-height: 350px;
+    overflow-y: auto;
+    padding-right: 6px;
+}
+
+.history-item {
+    background: #797575;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.history-item-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.query-text {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.query-date {
+    font-size: 14px;
+    color: #ffffff;
+}

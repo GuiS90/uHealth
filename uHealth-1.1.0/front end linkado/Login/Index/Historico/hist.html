@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Histórico de consultas</title>
+    <link rel="stylesheet" href="hist_style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="user-silhouette">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+            </svg>
+            <h1 class="title">Histórico de consultas</h1>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="history-controls">
+            <span class="history-label">Histórico</span>
+            <button class="select-period-button">selecionar periodo</button>
+        </div>
+
+        <div class="history-box" id="history-list">
+            <!-- itens serão inseridos dinamicamente -->
+        </div>
+    </div>
+
+    <script src="historico_logica.js"></script>
+</body>
+</html>

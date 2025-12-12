@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário</title>
+    <link rel="stylesheet" href="cal_style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-content">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="user-silhouette">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c-2.66-0-5.33-4-8-4z"/>
+            </svg>
+            <h1 class="title">Calendário</h1>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="calendar-wrapper">
+
+            <!-- 🔥 BARRA SUPERIOR COM MÊS E BOTÕES (CORRIGIDO) -->
+            <div class="month-topbar">
+                <button id="prev-month" class="month-btn">◀</button>
+                <span id="month-label" class="month-text">Carregando...</span>
+                <button id="next-month" class="month-btn">▶</button>
+            </div>
+
+            <div class="calendar-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SÁB</th>
+                        </tr>
+                    </thead>
+
+                    <!-- 🔥 Corpo dinâmico -->
+                    <tbody id="calendar-body"></tbody>
+
+                </table>
+            </div>
+        </div>
+
+        <div class="reminders-bar">
+            <h2>Lembretes:</h2>
+        </div>
+
+        <!-- 🔥 LEMBRETES DINÂMICOS -->
+        <div class="reminder-list" id="reminder-list">
+            <p>Carregando lembretes...</p>
+        </div>
+
+    </div>
+
+    <!-- 🔥 Lógica do calendário -->
+    <script src="cal_logica.js"></script>
+</body>
+</html>
