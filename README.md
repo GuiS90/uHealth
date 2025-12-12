@@ -128,11 +128,27 @@ O frontend rodará em:
 ENDPOINTS DA API
 ---------------------------------------------------
 
-GET /paciente/:id
-PUT /paciente/:id
+GET    /
+POST   /check-cpf
+
+POST   /login
+
+POST   /paciente/cadastrar
+GET    /paciente/:id
+PUT    /paciente/:id
 DELETE /paciente/:id
-POST /login
-POST /cadastro
+
+GET    /agendamentos/:idPaciente
+GET    /historico/:idPaciente
+
+POST   /agendar/opcoes-periodo
+POST   /agendar/confirmar
+
+GET    /consulta/:id
+
+GET    /calendario/:idPaciente/:ano/:mes
+
+GET    /receitas/:idPaciente
 
 ---------------------------------------------------
 ARQUIVOS IGNORADOS (.gitignore)
