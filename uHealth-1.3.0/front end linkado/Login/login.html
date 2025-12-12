@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login (Paciente)</title>
+    <link rel="stylesheet" href="login_style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="login-container">
+        <div class="icon-placeholder">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="user-icon">
+                <path d="M5.52 19c.64-2.2 1.84-3.58 3.52-4.48C11.25 13.5 13 13.5 14.96 14.52c1.68.9 2.88 2.28 3.52 4.48M12 12c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6z"></path>
+            </svg>
+        </div>
+
+        <h1>Login (Paciente)</h1>
+
+        <form method="POST" action="">
+            <div class="form-group">
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" placeholder="Insira seu cpf..." class="input-placeholder-bg">
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Insira sua senha..." class="input-placeholder-bg">
+                <a href="#" class="forgot-password">Esqueci minha senha</a>
+                <button id="btn_enter" type="button">entrar</button>
+            </div>
+
+            <p class="continue-with-text">Continuar com:</p>
+
+            <div class="social-login">
+                <a href="#" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google" class="social-img google-img">
+                </a>
+                <span class="or-separator">ou</span>
+                <a href="#" class="social-icon">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" class="social-img facebook-img">
+                </a>
+            </div>
+        </form>
+
+        <p class="signup-text">
+            Não tem uma conta? <a href="cada.html" class="signup-link">Cadastre-se aqui!</a>
+        </p>
+
+    </div>
+    <script src="login_logica.js"></script>
+</body>
+</html>
